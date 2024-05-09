@@ -26,6 +26,22 @@ header {
     z-index: 99;
     width: 100%;
     box-shadow: 0 2px 2px #3a3a3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+/* Nav toggle */
+#nav-toggle:checked~nav {
+    display: block
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
 }
 
 header a {
@@ -63,6 +79,7 @@ nav {
     padding: 0 1rem;
     width: 100%;
     display: none;
+    top: 100%
 }
 
 /* Main content */
@@ -70,6 +87,7 @@ main {
     background-color: lightblue;
     /* Make main element fill up any surplus space */
     flex: 1 0 auto;
+    margin-top: 47px;
 }
 /* Footer */
 footer {
